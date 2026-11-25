@@ -1,11 +1,11 @@
 # The Packet codec and the order of a body
 
 `packets.sgd` writes and reads the 100-byte entity Packet of `contract-entity-packet`, and
-`data/parts.tsv` gives the 21 bodies of a person their order on the wire.
+`data/parts.yamlld` gives the 21 bodies of a person their order on the wire; it is the wire order, and no other table is.
 
 ## The part table
 
-`data/parts.tsv` gives the 21 bodies their order on the wire. The first frame is a whole coarse
+`data/parts.yamlld` is a canonical YAML-LD document (one line of RFC 8785 JSON, a `@list` of `{body, frame, part}`). The first frame is a whole coarse
 body: head, both hands, pelvis, chest, the base of the neck, both thighs, both shins and both
 heels. The second frame is the refinement: the low back, both collar bones, both upper arms, both
 forearms and both sets of toes, and then the three dummy Packets. The order is chosen so that a
