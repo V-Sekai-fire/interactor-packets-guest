@@ -5,7 +5,7 @@ The entity Packet codec as a SafeGDScript sandbox guest, and the order of a body
 ## What is here
 
 - `packets.sgd`: the 16 integer fields of a Packet, the swing-twist rotation code, and a body of the muscle skeleton to and from a Packet in the contract's frame for MuJoCo.
-- `data/parts.tsv`: the 21 bodies in wire order. The first frame is a whole coarse body and the second its refinement.
+- `data/parts.yamlld`: the 21 bodies in wire order, canonical YAML-LD (RFC 8785 JSON, as the workspace writes it). The first frame is a whole coarse body and the second its refinement.
 - `tests/packets_gate.gd` and `tests/proof_gate.gd`: the gates, against the golden rows of `contract-entity-packet`.
 - `docs/packets.md`: the calls, the part table, and how a position stays right to under a hair at solar-system distances.
 
